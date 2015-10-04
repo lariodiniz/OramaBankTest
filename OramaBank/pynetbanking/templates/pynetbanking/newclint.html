@@ -1,0 +1,12 @@
+{% extends 'pynetbanking/base.html' %}
+{% block content %}
+{% load staticfiles %}
+        {% load staticfiles %}
+        <form class="form-signin" action="" method="POST">
+            <h2 class="form-signin-heading">Cadastre-se</h2>
+            {% load bootstrap %}
+            {% csrf_token %}
+            {{ form|bootstrap }}
+            <input type="submit" value="Entrar"  class="btn btn-lg btn-primary btn-block">
+        </form>
+ {% endblock content %}

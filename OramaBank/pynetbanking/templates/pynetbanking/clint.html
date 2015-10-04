@@ -1,0 +1,24 @@
+{% extends 'pynetbanking/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<br/>
+<br/>
+{% if messages %}
+<div role="alert" class="alert alert-success">
+    {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}><strong>{{ message }}</strong></li>
+    {% endfor %}
+      </div>
+{% endif %}
+<div class="row">
+        <div class="col-md-12"><h2>Seja bem vindo {{ usuario }}</h2>
+        <p>O que voce quer fazer?</p></div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <a href="{% url 'pynetbanking:accounts' %}"><button href class="btn btn-lg btn-primary" type="button">Acessar Conta</button></div></a>
+    <div class="col-md-6">
+        <a href="{% url 'pynetbanking:newaccount' %}"><button class="btn btn-lg btn-warning" type="button">Criar Conta</button></div></div></a>
+
+</div>
+ {% endblock content %}

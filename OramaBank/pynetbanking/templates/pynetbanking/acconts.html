@@ -1,0 +1,64 @@
+{% extends 'pynetbanking/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<br/>
+<br/>
+{% if messages %}
+<div role="alert" class="alert alert-success">
+    {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}><strong>{{ message }}</strong></li>
+
+    {% endfor %}
+      </div>
+{% endif %}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Contas</h3>
+    </div>
+    <div class="panel-body">
+
+          <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acesso</th>
+                        <th>Tipo <span class="badge">Saldo</span></th>
+                        <th>Numero</th>
+                        <!--<th>Deletar</th>-->
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                {% for conta in object_list %}
+                    <tr>
+                        <td>
+                           <a href="{% url 'pynetbanking:account' conta.pk %}">
+                                <button class="btn btn-lg btn-info" type="submit" name="button-info" value="{{ conta.pk }}">Entrar</button>
+                            </a>
+                        </td>
+                        </td>
+
+                        <td><button class="btn btn-lg btn-primary" type="button">{% if conta.tipo  == "0" %}
+                                Corrente
+                            {% elif conta.tipo  == "1" %}
+                                Poupança
+                        {% endif %} <span class="badge">{{ conta.saldo }}</span></button>
+                        </td>
+                        <td>{{ conta.numero }}</td>
+                        <!--
+                        Botão para funcionalidade de Deletar conta para o prórpio cliente
+                        <td>
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <button class="btn btn-lg btn-danger" type="submit" name="button" value="{{ conta.pk }}">Deletar</button>
+                            </form>
+                        </td> -->
+                    </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+ </div>
+          </div>
+
+ {% endblock content %}

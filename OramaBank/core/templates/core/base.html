@@ -1,0 +1,71 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta content="Teste para Oramá, feito em Python/Django e Bootstrap" name="description">
+        <meta content="Lário Diniz" name="author">
+        {% load staticfiles %}
+        <link href="{% static 'core/img/fav.gif' %}" rel="icon">
+
+        <title>{% block titulo %}Orama Bank Teste{% endblock %}</title>
+
+        <!-- Bootstrap core CSS -->
+        <link type="text/css" href="{% static 'core/css/bootstrap.min.css' %}" rel="stylesheet" media="screen" />
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Custom styles for this template -->
+        <link type="text/css" href="{% static 'core/css/carousel.css' %}" rel="stylesheet" media="screen" />
+    </head>
+    <!-- NAVBAR
+    ================================================== -->
+    <body id="page-top">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <p class="navbar-brand">Orama Bank Teste</p>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#page-top">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+              </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'pynetbanking:newclint' %}">Novo Cliente</a></li>
+                    <li><a href="{% url 'pynetbanking:login' %}">Acesso</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+                <div class="container">
+                {% block content %}
+                {% endblock content %}</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>

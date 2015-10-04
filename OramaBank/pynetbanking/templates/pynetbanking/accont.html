@@ -1,0 +1,58 @@
+{% extends 'pynetbanking/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<br/>
+<br/>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Conta: {{ object.numero }}</h3>
+    </div>
+    <div class="panel-body">
+          <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Cliente</th>
+                        <th>Data de Criação da Contar</th>
+                        <th>saldo</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>{% if object.tipo  == "0" %}
+                                Corrente
+                            {% elif object.tipo  == "1" %}
+                                Poupança
+                        {% endif %}
+                        </td>
+                        <td>{{ object.user.username }}</td>
+                        <td>{{ object.data }}</td>
+                        <td>{{ object.saldo }}</td>
+                    </tr>
+                </tbody>
+          </table>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <a href="{% url 'pynetbanking:accounts' %}">
+            <button href class="btn btn-lg btn-primary" type="button">Voltar</button>
+        </a>
+    </div>
+    <div class="col-md-6-right">
+        <a href="{% url 'pynetbanking:deposito' %}">
+            <button class="btn btn-lg btn-info" type="submit" name="button">Deposito</button>
+        </a>
+        <a href="{% url 'pynetbanking:saque' %}">
+            <button class="btn btn-lg btn-success" type="submit" name="button-info">Saque</button>
+        </a>
+    </div>
+
+
+</div>
+
+ {% endblock content %}

@@ -1,0 +1,58 @@
+{% extends 'pynetbanking/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<br/>
+<br/>
+<div role="alert" class="alert alert-danger">
+        <strong>Atenção!</strong> Você tem certeza que quer deletar esta conta?
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Conta: {{ conta.numero }}</h3>
+    </div>
+    <div class="panel-body">
+          <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Usuario</th>
+                        <th>Data de Criação da Contar</th>
+                        <th>saldo</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>{% if conta.tipo  == "0" %}
+                                Corrente
+                            {% elif conta.tipo  == "1" %}
+                                Poupança
+                        {% endif %}
+                        </td>
+                        <td>{{ conta.user.username }}</td>
+                        <td>{{ conta.data }}</td>
+                        <td>{{ conta.saldo }}</td>
+                    </tr>
+                </tbody>
+          </table>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <a href="{% url 'pynetbanking:accounts' %}">
+            <button href class="btn btn-lg btn-primary" type="button">Voltar</button>
+        </a>
+    </div>
+    <div class="col-md-6-right">
+        <form action="" method="post">
+            {% csrf_token %}
+            <button class="btn btn-lg btn-danger" type="submit" name="button" value="{{ conta.pk }}">Deletar</button>
+        </form>
+    </div>
+
+
+</div>
+
+ {% endblock content %}
