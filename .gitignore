@@ -19,6 +19,7 @@ lib64/
 parts/
 sdist/
 var/
+migrations/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -55,3 +56,15 @@ docs/_build/
 
 # PyBuilder
 target/
+
+bin
+include
+local
+man
+share
+Scripts
+*.pyc
+*~
+*.db
+.DS_Store
+*.sqlite3
