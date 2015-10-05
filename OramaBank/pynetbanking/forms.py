@@ -71,7 +71,7 @@ class NewclintForm(forms.ModelForm):
 
         #configuração username
         self.base_fields['username'].help_text = 'Somente letras, dígitos e @/./+/-/_.'
-        self.base_fields['username'].label =_('Nome')
+        self.base_fields['username'].label =_('Login')
         #self.base_fields['class'] =_('text')
 
 
@@ -93,6 +93,7 @@ class NewclintForm(forms.ModelForm):
         self.base_fields['password'].label =_('Senha')
         #self.base_fields['password'].type =_('password')
 
+        self.base_fields['cpf'].help_text = 'Somente numeros, sem pontos ou hifem'
         super(NewclintForm, self).__init__(*args, **kwargs)
 
 
