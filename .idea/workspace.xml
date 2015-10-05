@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d33493-5fe2-405b-bd5d-ce33a25a4f1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OramaBank/pynetbanking/admin.py" afterPath="$PROJECT_DIR$/OramaBank/pynetbanking/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OramaBank/settings.py" afterPath="$PROJECT_DIR$/OramaBank/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OramaBank/wsgi.py" afterPath="$PROJECT_DIR$/OramaBank/wsgi.py" />
     </list>
     <ignored path="OramaBankTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OramaBank/wsgi.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OramaBank/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5026087" vertical-offset="0" max-vertical-offset="575">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.53217393" vertical-offset="459" max-vertical-offset="2329">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
-                <element signature="e#225#234#0" expanded="true" />
+                <element signature="e#586#595#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +77,8 @@
         <option value="$PROJECT_DIR$/OramaBank/pynetbanking/templates/pynetbanking/generalreport.html" />
         <option value="$PROJECT_DIR$/OramaBank/dashboard.py" />
         <option value="$PROJECT_DIR$/OramaBank/pynetbanking/admin.py" />
-        <option value="$PROJECT_DIR$/OramaBank/settings.py" />
         <option value="$PROJECT_DIR$/OramaBank/wsgi.py" />
+        <option value="$PROJECT_DIR$/OramaBank/settings.py" />
       </list>
     </option>
   </component>
@@ -451,7 +448,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
-            <element signature="e#204#236#0" expanded="true" />
+            <element signature="e#204#236#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -702,22 +699,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OramaBank/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.04" vertical-offset="292" max-vertical-offset="2363">
-          <caret line="120" column="19" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
-          <folding>
-            <element signature="e#586#595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OramaBank/pynetbanking/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6" vertical-offset="879" max-vertical-offset="1513">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <element signature="e#204#236#0" expanded="true" />
+            <element signature="e#204#236#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,9 +758,19 @@
     <entry file="file://$PROJECT_DIR$/OramaBank/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5026087" vertical-offset="0" max-vertical-offset="575">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
             <element signature="e#225#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OramaBank/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53217393" vertical-offset="459" max-vertical-offset="2329">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <element signature="e#586#595#0" expanded="true" />
           </folding>
         </state>
       </provider>

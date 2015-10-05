@@ -36,19 +36,14 @@ SECRET_KEY = '4c1cxprxc!vm)q&94i3s=7z9!g3)!7c(31wm+y7&6pa27sssoi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-ALLOWED_HOSTS = ['*']
-
-
 # Application definition
 
 INSTALLED_APPS = (
+    'django.contrib.auth',
     'admin_tools',
     'admin_tools.dashboard',
     'admin_tools.menu',
     'admin_tools.theming',
-    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -95,7 +90,8 @@ WSGI_APPLICATION = 'OramaBank.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(default='sqlite:///'+os.path.join(BASE_DIR, 'database.db'))
+DATABASES = {
+    'default': dj_database_url.config(default='sqlite:///'+os.path.join(BASE_DIR, 'database.db'))
 
 }
 
@@ -126,6 +122,8 @@ STATICFILES_DIRS = (
 
 #Configurando a Adinistração Personalizada.
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ALLOWED_HOSTS = ['*']
 
 ADMIN_TOOLS_INDEX_DASHBOARD = 'OramaBank.dashboard.CustomIndexDashboard'
 ADMIN_TOOLS_MENU = 'OramaBank.menu.CustomMenu'
