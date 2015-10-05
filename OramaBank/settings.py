@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'localflavor',
     'OramaBank.core',
     'OramaBank.pynetbanking',
     'bootstrapform',
