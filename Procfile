@@ -1,1 +1,1 @@
-﻿web: gunicorn OramaBankTest.wsgi --log-file -
+﻿web: gunicorn OramaBank.wsgi --log-file -
