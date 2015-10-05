@@ -1,7 +1,7 @@
 
 Teste feito para a empresa Órama utilizando Python/Django e Bootstrap
 
-O texte Consistia em:
+O teste Consistia em:
 
 Como visitante, gostaria de abrir uma conta no banco
 Como cliente do banco, gostaria de fazer uma operação de depósito;
