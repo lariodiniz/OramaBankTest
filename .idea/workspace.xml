@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89d33493-5fe2-405b-bd5d-ce33a25a4f1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OramaBank/settings.py" afterPath="$PROJECT_DIR$/OramaBank/settings.py" />
-    </list>
+    <list default="true" id="89d33493-5fe2-405b-bd5d-ce33a25a4f1c" name="Default" comment="" />
     <ignored path="OramaBankTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/OramaBank/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.44347826" vertical-offset="612" max-vertical-offset="2346">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
               <folding>
                 <element signature="e#586#595#0" expanded="true" />
               </folding>
@@ -808,7 +806,7 @@
     <entry file="file://$PROJECT_DIR$/OramaBank/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44347826" vertical-offset="612" max-vertical-offset="2346">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
           <folding>
             <element signature="e#586#595#0" expanded="true" />
           </folding>
