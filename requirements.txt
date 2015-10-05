@@ -1,0 +1,9 @@
+dj-database-url==0.3.0
+Django==1.8.4
+gunicorn==19.3.0
+wheel==0.24.0
+whitenoise==2.0.3
+django-admin-bootstrapped==2.5.6
+django-admin-tools==0.6.0
+django-bootstrap-form==3.2
+psycopg2

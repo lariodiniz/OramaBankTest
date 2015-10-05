@@ -72,6 +72,8 @@ class Operacao_ModelAdmin(admin.ModelAdmin):
     list_filter = ['data', 'tipo']
 
 
+
+
 admin.site.register(Cliente_Model, Cliente_ModelnAdmin)
 admin.site.register(Conta_Model, Conta_ModelAdmin)
 admin.site.register(Operacao_model, Operacao_ModelAdmin)
