@@ -202,7 +202,7 @@ class AccountViews(DetailView):
 
 
 class DepositoViews(View):
-    template_name = 'pynetbanking/Operacao.html'
+    template_name = 'pynetbanking/operacao.html'
     form_class = OperacaoForm
     initial = {'key': 'value'}
 
