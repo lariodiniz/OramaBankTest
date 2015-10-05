@@ -21,7 +21,22 @@ import random
 import datetime
 
 from .forms import LoginForm, NewclintForm, AccountForm, OperacaoForm
-from .models import Cliente_Model, Conta_Model
+from .models import Cliente_Model, Conta_Model, Operacao_model
+
+class GeneralReporttView(ListView):
+    template_name = 'pynetbanking/generalreport.html'
+    model = Operacao_model
+
+    def get_context_data(self, **kwargs):
+
+        context = super(GeneralReporttView, self).get_context_data(**kwargs)
+
+        return context
+
+    @method_decorator(login_required)
+    def dispatch(self, *args, **kwargs):
+        return super(GeneralReporttView, self).dispatch(*args, **kwargs)
+
 
 class ExitView(View):
     'View logout'
@@ -76,6 +91,7 @@ class NewuserViews(View):
 
             username = request.POST['username']
             password = request.POST['password']
+            form.save()
             user = authenticate(username=username, password=password)
             login(request, user)
             slug=Cliente_Model.objects.get(user=request.user.pk).slug
@@ -117,7 +133,7 @@ class NewaccountViews(View):
                 n+=str(random.randrange(0,9))
 
             Conta_Model.objects.create(
-            user=self.request.user,
+            user=Cliente_Model.objects.get(user=self.request.user),
             data=timezone.now(),
             numero=n,
             saldo=form.cleaned_data['saldo'],
@@ -139,7 +155,7 @@ class AccountsViews(ListView):
     def get_context_data(self, **kwargs):
 
         context = super(AccountsViews, self).get_context_data(**kwargs)
-        context['object_list']= Conta_Model.objects.filter(user=self.request.user)
+        context['object_list']= Conta_Model.objects.filter(user=Cliente_Model.objects.get(user=self.request.user))
         context['usuario'] = self.request.user.username
         return context
 

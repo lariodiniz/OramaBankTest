@@ -45,7 +45,7 @@ class Conta_Model(models.Model):
     """
     Modelo das contas dos clientes.
     """
-    user=models.ForeignKey(User,verbose_name=_('Cliente'), blank=True)
+    user=models.ForeignKey(Cliente_Model,verbose_name=_('Cliente'), blank=True)
     numero=models.CharField(_(u'Conta'), max_length=250, blank=True, unique=True)
     data=models.DateTimeField(_('Conta Aberta'))
     saldo=models.FloatField(_('Saldo'))

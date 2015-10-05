@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^deposito/$', views.DepositoViews.as_view(), name='deposito'),
     url(r'^saque/$', views.SaqueViews.as_view(), name='saque'),
     url(r'^logout/$', views.ExitView.as_view(), name='sair'),
+    url(r'^relatoriogeral/$', views.GeneralReporttView.as_view(), name='generalreportt'),
 
 
 ]

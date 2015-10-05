@@ -18,10 +18,9 @@ from .models import Cliente_Model, Conta_Model, Operacao_model
 class Cliente_ModelnAdmin(admin.ModelAdmin):
     list_display = ('user', 'codigo', 'cpf', 'saldo_total','conta_corrente','poupanca')
     search_fields = ['user', 'codigo', 'cpf']
-    actions = ['saldo_total_todos']
 
     def saldo_total(self, obj):
-        contas =  Conta_Model.objects.filter(user=obj.user)
+        contas =  Conta_Model.objects.filter(user=Cliente_Model.objects.get(user=obj.user))
         saldo = float()
 
 
@@ -30,15 +29,8 @@ class Cliente_ModelnAdmin(admin.ModelAdmin):
 
         return saldo
 
-    def saldo_total_todos(self, request):
-        contas =  Conta_Model.objects.all()
-        saldo = float()
-        for conta in contas:
-            saldo +=conta.saldo
-        self.message_user(request,'Saldo total de Todos os clientes: %s' %str(saldo))
-
     def conta_corrente(self, obj):
-        contas =  Conta_Model.objects.filter(user=obj.user)
+        contas =  Conta_Model.objects.filter(user=Cliente_Model.objects.get(user=obj.user))
         val=False
 
         for conta in contas:
@@ -52,7 +44,7 @@ class Cliente_ModelnAdmin(admin.ModelAdmin):
     conta_corrente.boolean = True
 
     def poupanca(self, obj):
-        contas =  Conta_Model.objects.filter(user=obj.user)
+        contas =  Conta_Model.objects.filter(user=Cliente_Model.objects.get(user=obj.user))
         val=False
 
         for conta in contas:
@@ -69,7 +61,7 @@ class Cliente_ModelnAdmin(admin.ModelAdmin):
 
 
 class Conta_ModelAdmin(admin.ModelAdmin):
-    list_display = ('numero','tipo', 'saldo','user',  'data')
+    list_display = ('numero','user','tipo', 'saldo', 'data')
     list_filter = ['data']
     search_fields = ['numero']
 

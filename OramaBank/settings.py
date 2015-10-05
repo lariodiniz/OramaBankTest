@@ -41,16 +41,20 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
+    'admin_tools',
+    'admin_tools.dashboard',
+    'admin_tools.menu',
+    'admin_tools.theming',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
     'OramaBank.core',
     'OramaBank.pynetbanking',
     'bootstrapform',
-    'localflavor',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -117,3 +121,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+#Configurando a Adinistração Personalizada.
+
+
+ADMIN_TOOLS_INDEX_DASHBOARD = 'OramaBank.dashboard.CustomIndexDashboard'
+ADMIN_TOOLS_MENU = 'OramaBank.menu.CustomMenu'
+
+
+ADMIN_TOOLS_THEMING_CSS = 'css/theming.css'

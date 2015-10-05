@@ -14,6 +14,8 @@ from django.utils.translation import ugettext_lazy as _
 from .models import Cliente_Model, Conta_Model
 from django.contrib.auth import authenticate
 
+import random
+
 from localflavor.br.forms import BRCPFField
 
 
