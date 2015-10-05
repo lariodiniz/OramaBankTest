@@ -34,7 +34,7 @@ class LoginForm(forms.ModelForm):
 
         self.base_fields['password'].widget = forms.PasswordInput()
         self.base_fields['password'].label =_('Senha')
-        #self.base_fields['password'].type =_('password')
+        self.base_fields['password'].type =_('password')
 
 
         super(LoginForm, self).__init__(*args, **kwargs)

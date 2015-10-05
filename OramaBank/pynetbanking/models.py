@@ -26,7 +26,7 @@ class Cliente_Model(models.Model):
     """
     user=models.OneToOneField(User,verbose_name=_('Cliente'), blank=True)
     codigo=models.CharField(_(u'Códico'), max_length=250)
-    cpf=models.CharField(_(u'CPF'))
+    cpf=models.CharField(_(u'CPF'), max_length=11)
     slug = models.SlugField(_('slug'),max_length=100, blank=True, unique=True)
 
     class Meta:
