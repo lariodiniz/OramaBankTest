@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d33493-5fe2-405b-bd5d-ce33a25a4f1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OramaBank/wsgi.py" afterPath="$PROJECT_DIR$/OramaBank/wsgi.py" />
     </list>
     <ignored path="OramaBankTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +41,8 @@
       <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OramaBank/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44347826" vertical-offset="0" max-vertical-offset="575">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.23652174" vertical-offset="0" max-vertical-offset="575">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#225#234#0" expanded="true" />
               </folding>
@@ -315,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1288" y="40" width="1296" height="736" extended-state="7" />
+    <frame x="-1288" y="40" width="1296" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -394,7 +394,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2108">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#204#232#0" expanded="true" />
+            <element signature="e#204#232#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -426,7 +426,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2686">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#204#277#0" expanded="true" />
+            <element signature="e#204#277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -450,7 +450,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="2057">
           <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
           <folding>
-            <element signature="e#204#232#0" expanded="true" />
+            <element signature="e#204#232#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -500,7 +500,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="867">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
-            <element signature="e#204#277#0" expanded="true" />
+            <element signature="e#204#277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,7 +734,7 @@
         <state vertical-scroll-proportion="0.059130434" vertical-offset="2448" max-vertical-offset="4675">
           <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
           <folding>
-            <element signature="e#204#277#0" expanded="true" />
+            <element signature="e#204#277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,7 +754,7 @@
         <state vertical-scroll-proportion="0.76869565" vertical-offset="357" max-vertical-offset="2227">
           <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
           <folding>
-            <element signature="e#204#232#0" expanded="true" />
+            <element signature="e#204#232#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -779,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OramaBank/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44347826" vertical-offset="0" max-vertical-offset="575">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.23652174" vertical-offset="0" max-vertical-offset="575">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#225#234#0" expanded="true" />
           </folding>
